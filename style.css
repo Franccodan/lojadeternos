@@ -1,0 +1,371 @@
+:root {
+    --color-primary: #917758;
+    --color-secundary: #3c2915;
+    --color-primary-light: #f5eee6; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/******
+* HOME
+*********/
+
+.home {
+    background-image: url(./img/lima.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.home .header {
+    padding: 30px;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    display: flex;
+    list-style: none;   
+}
+
+.home .header .nav ul li {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+}
+
+.home .header .nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px;
+}
+
+
+.home .header .nav ul li a:hover {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    color: white;
+}
+
+.home .header .nav ul li .logo {
+    margin: 0 30px;
+}
+
+
+
+/******
+* HOME - BANNER
+*********/
+
+
+
+
+.home .slogan {
+    display: flex;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.slogan2 {
+    letter-spacing: 4px;
+}
+
+
+/******
+* HOME - BANNER
+*********/
+
+
+.about {
+    margin-top: px;
+    background-color: rgb(255, 255, 255);
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .timing {
+    position: relative;
+    top: 10px;
+    width: 80%;
+    padding: 20px;
+    margin: 0 -50px;
+}
+
+
+
+
+.about .timing .overlay {
+    background-image: url(./img/casamento.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 40px 20px;
+    height: 100vh;
+}
+
+.about .timing .icon-cut  {
+    width: 50px;
+
+}
+
+.about .timing h3 {
+    color: rgb(255, 231, 10);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+}
+
+.about .timing .text::after {
+    content: '•';
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.about .timing .text:last-of-type:after {
+    content: '|';
+}
+
+.about .timing .text {
+    margin: 10px 0;
+   
+}
+
+.about .timing .text h4 {
+        color: rgb(8, 8, 8);
+        font-weight: 400;
+        font-size: 15px;
+}
+
+
+.about .timing span {
+    color: rgb(7, 6, 6);
+    font-size: 15px;
+    display: block;
+}
+
+.about .experience {
+    width: 66%;
+    color: rgb(0, 0, 0);
+    margin-left: 7%;
+    margin-top: 100px;
+}
+
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experience h2::after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    font-weight: 100px;
+    font-size: 17px;
+}
+
+
+
+/******
+* GALLERY
+*********/
+
+.gallery  {
+    padding: 100px 0;
+    background-color: var(--color-primary-light);
+}
+
+.gallery h2 {
+    color: black;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gallery .img {
+    margin: 0;
+    display: block;
+}
+
+.gallery .gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 950px;
+    height: 100vh;  
+    margin: 50px auto;
+}
+
+.gallery .gallery-wrapper div {
+    width: 30%;
+    margin: 5px;
+}
+
+.gallery .gallery-wrapper div img {
+    width: 100%;
+}
+
+/******
+* LOCATION
+*********/
+
+.location {
+    padding: 100px 0;
+    background-image: url(../img/bg-location.jpg);
+    background-size: cover;
+}
+
+.location .head  {
+    color: var(--color-primary);
+    display: flex;
+    background-color: #191919;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px;
+}
+
+.location .head .info {
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon {
+    margin-right: 15px;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+
+.location .head .info .text span {
+    display: block;
+    font-size: 13px;
+}
+
+.location .head .info .text span:first-child {
+    color: silver;
+}
+
+.location .head .info .text span:last-child {
+    color: white;
+}
+
+.location .map {
+    width: 100%;
+}
+
+.location .map iframe {
+    width: 100%;
+}
+
+/******
+* LOCATION
+*********/
+
+
+.services  {
+    padding: 100px;
+    text-align: center;
+    background-color: var(--color-primary-light);
+    position: relative;
+}
+
+.services h1   {
+    color: black;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.services .boxes   {
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.services .box img   {
+    border: 3px solid var(--color-primary);
+    padding: 50px 40px;
+    margin: 30px;
+    width: 400px;
+    
+}
+
+.services .box img {
+    color: var(--color-secundary);
+    margin-top: 30px;
+    height: 550px;
+    width: 550px;
+}
+
+.services img {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+
+
+.footer  {
+    background-color: #191919;
+    color: white;
+    padding: 45px;
+    text-align: center;
+}
+
+.inst img {
+    display: flex;
+    width: 25px;
+    margin: 10px 50%;
+    justify-content: space-around;
+}
